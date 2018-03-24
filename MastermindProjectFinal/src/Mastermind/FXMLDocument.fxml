@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="ap" prefHeight="840.0" prefWidth="1170.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Mastermind.FXMLDocumentController">
+    <children>
+      <Pane layoutX="76.0" layoutY="14.0" prefHeight="567.0" prefWidth="388.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="447.0" AnchorPane.topAnchor="10.0">
+         <children>
+            <Pane fx:id="panetoaddbutton" layoutX="35.0" layoutY="21.0" prefHeight="456.0" prefWidth="393.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#947c59" height="389.0" stroke="#b12604" width="393.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ad7363" height="300.0" layoutX="130.0" layoutY="48.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="145.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="288.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="258.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="198.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="black" fitHeight="30.0" fitWidth="30.0" layoutX="229.0" layoutY="420.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@black.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="green" fitHeight="30.0" fitWidth="30.0" layoutX="199.0" layoutY="420.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@green.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="orange" fitHeight="30.0" fitWidth="30.0" layoutX="169.0" layoutY="420.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@orange.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="page" fx:id="pageBall" fitHeight="30.0" fitWidth="30.0" layoutX="139.0" layoutY="420.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@page.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="purple" fx:id="purpleBall" fitHeight="30.0" fitWidth="30.0" layoutX="139.0" layoutY="390.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@purple.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="red" fitHeight="30.0" fitWidth="30.0" layoutX="169.0" layoutY="390.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@red.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="white" fitHeight="30.0" fitWidth="30.0" layoutX="199.0" layoutY="390.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@white.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="yellow" fitHeight="30.0" fitWidth="30.0" layoutX="229.0" layoutY="390.0" onMouseClicked="#handleImageClick" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@yellow.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="CLOSED_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView fx:id="imageViewCurrentColor" fitHeight="40.0" fitWidth="40.0" layoutX="277.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <Button fx:id="buttonDefult" defaultButton="true" layoutX="330.0" layoutY="323.0" mnemonicParsing="false" onMouseClicked="#checkPlyerGuess" text="Check" visible="false" />
+                  <Pane fx:id="pane6" layoutX="67.0" layoutY="47.0" prefHeight="302.0" prefWidth="62.0" visible="false">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ad7363" height="301.0" layoutX="2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="60.0" />
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="241.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="181.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="91.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="271.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView id="4" fx:id="big4" fitHeight="30.0" fitWidth="30.0" layoutX="33.0" layoutY="271.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView id="5" fx:id="big5" fitHeight="30.0" fitWidth="30.0" layoutX="3.0" layoutY="271.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@color_hole.gif" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="OPEN_HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="318.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="3" fx:id="big3" fitHeight="30.0" fitWidth="30.0" layoutX="129.0" layoutY="318.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="2" fx:id="big2" fitHeight="30.0" fitWidth="30.0" layoutX="159.0" layoutY="318.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="1" fx:id="big1" fitHeight="30.0" fitWidth="30.0" layoutX="189.0" layoutY="318.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="0" fx:id="big0" fitHeight="30.0" fitWidth="30.0" layoutX="219.0" layoutY="318.0" onMouseClicked="#putBall" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="OPEN_HAND" />
+                     </cursor>
+                  </ImageView>
+                  <ImageView id="small3" fx:id="small3" fitHeight="10.0" fitWidth="10.0" layoutX="250.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="small1" fx:id="small1" fitHeight="10.0" fitWidth="10.0" layoutX="250.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="small4" fx:id="small4" fitHeight="10.0" fitWidth="10.0" layoutX="260.0" layoutY="330.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="small2" fx:id="small2" fitHeight="10.0" fitWidth="10.0" layoutX="260.0" layoutY="320.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="small5" fx:id="small5" fitHeight="10.0" fitWidth="10.0" layoutX="250.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="small6" fx:id="small6" fitHeight="10.0" fitWidth="10.0" layoutX="260.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@color_hole.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="128.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="158.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="188.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="218.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="qm6" fx:id="qm6" fitHeight="30.0" fitWidth="30.0" layoutX="68.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView id="qm5" fx:id="qm5" fitHeight="30.0" fitWidth="30.0" layoutX="98.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@qm.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </Pane>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4e0eb" height="73.0" layoutX="39.0" layoutY="482.0" stroke="#c9abab" strokeType="INSIDE" width="394.0" />
+            <MenuButton fx:id="ballsmenu" layoutX="69.0" layoutY="492.0" mnemonicParsing="false" text="Balls">
+              <items>
+                <MenuItem id="4" mnemonicParsing="false" onAction="#setBallsNumber" text="      4      " />
+                <MenuItem id="6" mnemonicParsing="false" onAction="#setBallsNumber" text="      6      " />
+              </items>
+            </MenuButton>
+            <Label fx:id="labelBalls" layoutX="196.0" layoutY="496.0" text="4" />
+            <MenuButton fx:id="repeatcolormenu" layoutX="69.0" layoutY="528.0" mnemonicParsing="false" text="Repeat colors">
+              <items>
+                <MenuItem id="1" mnemonicParsing="false" onAction="#setBallsRepeat" text="Yes" />
+                <MenuItem id="0" mnemonicParsing="false" onAction="#setBallsRepeat" text="No" />
+              </items>
+            </MenuButton>
+            <Label fx:id="labeRepeat" layoutX="191.0" layoutY="532.0" text="Yes" />
+            <Button fx:id="buttonStart" layoutX="244.0" layoutY="527.0" mnemonicParsing="false" onMouseClicked="#startGame" text="Start!" />
+            <Label fx:id="triesCounter" layoutX="296.0" layoutY="532.0" prefHeight="17.0" prefWidth="111.0" text="Tries Counter : 0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4e0eb" height="73.0" layoutX="458.0" layoutY="481.0" stroke="#c9abab" strokeType="INSIDE" width="255.0" />
+            <Button fx:id="saveGameButton" disable="true" layoutX="478.0" layoutY="489.0" mnemonicParsing="false" onMouseClicked="#setResultsRows" text="Save results" />
+            <TextField fx:id="plyerNameText" disable="true" layoutX="478.0" layoutY="521.0" prefHeight="25.0" prefWidth="171.0" promptText="Player Name" text="new player" />
+            <MenuButton fx:id="colorsmenu" layoutX="238.0" layoutY="492.0" mnemonicParsing="false" text="Colors">
+               <items>
+                  <MenuItem id="6" mnemonicParsing="false" onAction="#setcolorsNumber" text="      6      " />
+                  <MenuItem id="8" mnemonicParsing="false" onAction="#setcolorsNumber" text="      8      " />
+               </items>
+            </MenuButton>
+            <Label fx:id="labelcolorsnum" layoutX="338.0" layoutY="496.0" text="8" />
+         </children>
+      </Pane>
+      <Label fx:id="labe2" layoutX="855.0" layoutY="88.0" minHeight="16" minWidth="69" prefHeight="30.0" prefWidth="279.0" text="?" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+        <Label fx:id="label" layoutX="869.0" layoutY="14.0" minHeight="16" minWidth="69" prefHeight="30.0" prefWidth="287.0" text="?" textAlignment="CENTER" visible="false">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+      <TextArea editable="false" layoutX="646.0" layoutY="29.0" prefHeight="404.0" prefWidth="497.0" text="Mastermind - Rules of the game.&#10;  &#9;&#10;- The computer picks a sequence of colors. The number of colors is the code length. The default code length is 4 but it can be changed to 6.&#10;&#10;- The objective of the game is to guess the exact positions of the colors in the computer's sequence.&#10;&#10;- By default, a color can be used  more than once in a code sequence. If you start a new game with the 'No Reapeat colors' checked, then a color can be used only once.&#10;&#10;- After filling a line with your guesses and clicking on the 'Check' button, the computer responses with the result of your guess.&#10;&#10;- For each color in your guess that is in the correct color and correct position in the code sequence, the computer display a small red color on the right side of the current guess.&#10;&#10;- For each color in your guess that is in the correct color but is NOT in the correct position in the code sequence, the computer display a small white color on the right side of the current guess.&#10;&#10;- You win the game when you manage to guess all the colors in the code sequence and when they all in the right position.&#10;&#10;- You lose the game if you use all attempts without guessing the computer code sequence.&#10;&#10;How to play this game:&#10;&#10;- Start a new game by clicking on the 'Start!' button. If you wish to change the default game parameters, you may change the 'Balls Numbers' and/or the 'Reapeat colors' fields before clicking on the 'Start!' button.&#10;&#10;- To start filling a line, you must first select a color at the bottom of the table by clicking on it. After selecting a color you can just put it in the current guess line above by clicking on the desired position.&#10;&#10;- To change the color selection, by clicking on a new color on one of the colors at the bottom.&#10;&#10;- After filling a whole line, you can still change your selection before asking the computer to respond to your guess. When you're satisfied with your guess, just click on the 'Check' button and get the computer response.&#10;&#10;- Good Luck!!&#10;&#10;&#9; " wrapText="true">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextArea>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d4e0eb" height="73.0" layoutX="749.0" layoutY="487.0" stroke="#c9abab" strokeType="INSIDE" width="394.0" />
+      <Button fx:id="buttonReStart" layoutX="771.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#restartGame" text="Restart Game" />
+      <Button layoutX="867.0" layoutY="500.0" mnemonicParsing="false" onMouseClicked="#newWindowGame" text="Open in New Window" />
+      <Button layoutX="771.0" layoutY="530.0" mnemonicParsing="false" onAction="#getResultsRows" text="Show history" />
+      <Button layoutX="869.0" layoutY="530.0" mnemonicParsing="false" onMouseClicked="#deleteRows" text="Clear history" />
+    </children>
+</AnchorPane>
